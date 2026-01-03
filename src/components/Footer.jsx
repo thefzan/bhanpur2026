@@ -10,15 +10,7 @@ const Footer = () => {
         <div className=' flex  justify-center pt-5'>
             <img src={Bottom} alt="Logo"  className='w-32'/>
         </div>
-        <div className='flex justify-center'>
-           <div className=' flex  items-center font-sans text-sm mt-2'>
-            <div ><IoIosCall/></div>
-            <div>+91 9919092470 |</div>
-            <div ><CgMail  className='text-xl pt-0.5'/></div>
-            <div>syedshazadhusain@gmail.com</div>
-           </div>
-        </div>
-        <div className=' flex justify-center'>
+         <div className=' flex justify-center'>
             <a
   href="https://wa.me/919919092470"
   target="_blank"
@@ -30,6 +22,15 @@ const Footer = () => {
   </div>
 </a>
         </div>
+        <div className='flex justify-center'>
+           <div className=' flex  items-center font-sans text-sm mt-2'>
+            <div ><IoIosCall/></div>
+            <div>+91 9919092470 |</div>
+            <div ><CgMail  className='text-xl pt-0.5'/></div>
+            <div>syedshazadhusain@gmail.com</div>
+           </div>
+        </div>
+       
         <div className='flex justify-center mt-2 pb-5'>
             <h4 className='text-center text-sm'>© 2026 Shifa-e-Shafi Dawakhana | All Right Reserved <br />Devloped By Syed Faizan</h4>
         </div>
