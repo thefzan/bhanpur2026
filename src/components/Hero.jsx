@@ -19,7 +19,7 @@ const Hero = () => {
         </div>
          <div className=' h-22 w-42 flex flex-col justify-center items-center rounded-xl'>
             <h2 className='font-bold text-center'>Bhanpur 2025 <br/>Voter list</h2>
-            <button className='bg-yellow-400 w-[80%] mt-3 font-bold text-white rounded'>Download</button>
+            <button className='bg-blue-950 w-[80%] mt-3 font-bold text-white rounded'>Download</button>
         </div>
     </div>
     <div className='ml-2 mr-2 rounded'>
