@@ -1,13 +1,19 @@
-import Footer from "./components/Footer"
-import Hero from "./components/Hero"
-import Nav from "./components/Nav"
+import Footer from "./components/Footer.jsx"
+import Hero from "./components/Hero.jsx"
+import Nav from "./components/Nav.jsx"
+import Download from "./components/Download.jsx";
+import { Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
+    
     <>
     <Nav/>
-    <Hero/>
-    <Footer/>
+    <Routes>
+      <Route path="/" element={<Hero/>}/>
+      <Route path="/download" element={<Download/>}/>
+    </Routes>
+      <Footer/>
     </>
   )
 }
