@@ -1,5 +1,5 @@
 import React from "react";
-import Profile from "../assets/profile.png"; // apni photo yahan rakhen
+import Profile from "../assets/profile1.jpeg"; // apni photo yahan rakhen
 
 const AboutMe = () => {
   return (

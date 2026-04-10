@@ -11,10 +11,15 @@ const Hero = () => {
     <div className='mt-1 '>
       <img src={Pic1} alt="" className='rounded-2xl' />
     </div>
+     <div className=' h-25 flex items-center flex-col bg-gray-200 rounded-2xl mt-2 m-2'>
+        <h2 className='font-bold mt-2'>SIR Final Publication(10 April 2026)</h2>
+        <button onClick={() => setShowPopup(true)} className='bg-green-600 h-9 mt-4 rounded w-[80%] text-white font-bold' >Download Final List 2026</button>  
+    </div>
     <div className=' h-25 flex items-center flex-col bg-gray-200 rounded-2xl mt-2 m-2'>
         <h2 className='font-bold mt-2'>SIR Draft Publication 2026 (Bhanpur)</h2>
         <button onClick={() => setShowPopup(true)} className='bg-green-600 h-9 mt-4 rounded w-[80%] text-white font-bold' >Download SIR Draft 2026</button>  
     </div>
+   
     {showPopup && <Popup onOk={() => setShowPopup(false)} />}
     <div className=' h-25 flex items-center gap-2 bg-gray-200 rounded-2xl mt-2 m-2 justify-center'>
         <div className=' h-22 w-42 flex flex-col justify-center items-center rounded-xl'>
