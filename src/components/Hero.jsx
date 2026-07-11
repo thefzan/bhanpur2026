@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <>
     <div className='mt-1 '>
-      <img src={Pic1} alt="" className='rounded-2xl' />
+      <img src={Pic1} alt=""  />
     </div>
      <div className=' h-25 flex items-center flex-col bg-gray-200 rounded-2xl mt-2 m-2'>
         <h2 className='font-bold mt-2'>SIR Final Publication(10 April 2026)</h2>
@@ -30,6 +30,7 @@ const Hero = () => {
             <h2 className='font-bold text-center'>Bhanpur 2025 <br/>Voter list</h2>
             <button onClick={() => setShowPopup(true)} className='bg-blue-950 w-[80%] mt-3 font-bold text-white rounded'>Download</button>
         </div>
+         
     </div>
     <div className='ml-2 mr-2 rounded'>
         <img src={Map} alt="Bhanpur_Map" className='rounded-xl' />
