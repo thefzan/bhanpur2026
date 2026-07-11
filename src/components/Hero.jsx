@@ -3,6 +3,7 @@ import Pic1 from "../assets/Pic1.jpg";
 import Map from "../assets/map.jpg";
 import { useState } from "react";
 import Popup from "./Popup";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -13,16 +14,16 @@ const Hero = () => {
       </div>
       <div className="  flex items-center gap-10 bg-gray-200 pl-4.5 rounded-2xl mt-2 m-2 p-2">
         <button
-          onClick={() => setShowPopup(true)}
+          
           className="bg-green-600 h-22 rounded w-22  text-white font-bold"
         >
-          2023 Voter's List
+          2023 Voter's List 
         </button>
         <button
           onClick={() => setShowPopup(true)}
           className="bg-pink-700 h-22  rounded w-22 text-white font-bold"
-        >
-          2026 Voter's List
+        ><Link to="/download">
+          2026 Voter's List </Link>
         </button>
         <a
           href="https://voters.eci.gov.in/"
