@@ -33,7 +33,7 @@ const Nav = () => {
   return (
     <>
       {/* Navbar */}
-      <div className='bg-blue-950 h-12 flex items-center justify-between relative z-50'>
+      <div className='bg-[#430081] h-12 flex items-center justify-between relative z-50'>
         {/* Logo */}
         <Link to='/'>
           <div className='w-20 ml-2'>
