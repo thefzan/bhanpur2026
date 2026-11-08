@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import AboutMe from "./components/About.jsx";
 import Services from "./components/Services.jsx";
 import ContactUs from "./components/Contact.jsx";
+import SelfEnumeration from "./components/SelfEnumeration.jsx";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Route path="/about" element={<AboutMe/>}/>
       <Route path="/services" element={<Services/>}/>
       <Route path="/contact" element={<ContactUs/>}/>
+      <Route path="/SelfEnumeration" element={<SelfEnumeration/>}/>
     </Routes>
       <Footer/>
     </>

@@ -2,6 +2,7 @@ import React from "react";
 import Pic1 from "../assets/photo.png";
 import Pic2 from "../assets/piclogo.png";
 import Pic3 from "../assets/logo.png";
+import Ces from "../assets/ces.png";
 import Map from "../assets/pmap.jpg";
 import { useState } from "react";
 import Popup from "./Popup";
@@ -22,6 +23,39 @@ const Hero = () => {
     <>
       <div className="mt-1 ">
         <img src={Pic1} alt="" />
+      </div>
+      <div className="   bg-gray-200 pl-4.5 rounded-2xl mt-2 mb-2  pt-2 pb-2">
+        <div className="flex items-center">
+          <h2 className="text-[#430081] font-bold">Lates update</h2>
+          <div className="w-10 ">
+            <img
+              className="mt-1"
+              src="https://media.tenor.com/UBNApyolWz4AAAAj/new-blinking-new-blinking-without-background.gif"
+              alt=""
+            />
+          </div>
+        </div>
+        <div className="flex items-center gap-2">
+          <div className="w-20">
+            <img src={Ces} alt="" />
+          </div>
+          <a
+            href="https://se.census.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="text-white w-35 bg-blue-700 p-2 rounded-xl shadow">
+              <h1>Self-Enumeration</h1>
+              <h1>स्व-गणना</h1>
+            </button>
+          </a>
+          <Link to="/SelfEnumeration">
+            <button className="text-white h-16 border-2 border-blue-700 p-2 rounded-xl shadow">
+              <h1 className="text-blue-700 font-bold">स्व-गणना प्रक्रिया</h1>
+            </button>
+          </Link>
+        </div>
+        <p className="text-red-700 font-bold text-center p-2 text-[13px]">सभी ग्रामवासियों को सूचित किया जाता है कि जनगणना 2027 के अंतर्गत स्व-गणना (Self Enumeration) की प्रक्रिया 16 नवंबर 2026 से शुरू हो रही है।</p>
       </div>
       <div className="  grid grid-cols-3 gap-2 bg-gray-200 pl-4.5 rounded-2xl mt-2 mb-2  pt-2 pb-2">
         <button className="bg-[linear-gradient(90deg,hsla(132,79%,68%,1)_0%,hsla(101,62%,48%,1)_100%)] shadow-2xl  h-11 flex leading-3.5  rounded-xl w-28 text-white items-center p-1">
@@ -210,7 +244,8 @@ const Hero = () => {
             विकसित भानपुर।
           </h2>
           <h2 className="text-red-700 font-black text-center bg-amber-300 mt-4">
-            आइए, मिलकर भानपुर को उत्तर प्रदेश का नंबर 1 गांव बनाने की दिशा में आगे बढ़ें।
+            आइए, मिलकर भानपुर को उत्तर प्रदेश का नंबर 1 गांव बनाने की दिशा में
+            आगे बढ़ें।
           </h2>
         </div>
       </div>
