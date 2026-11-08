@@ -153,7 +153,7 @@ const Hero = () => {
           <div className="w-25">
             <img src={Pic2} alt="" className="" />
           </div>
-          <h1 className="text-white mt-15 text-2xl font-black text-center">
+          <h1 className="text-yellow-400 mt-15 text-2xl font-black text-center">
             MY VISION FOR BHANPUR
           </h1>
           <div className="w-30">
