@@ -16,6 +16,8 @@ import { FaIdCard } from "react-icons/fa";
 import { RiGovernmentFill } from "react-icons/ri";
 import { FaTrophy } from "react-icons/fa";
 import { FaTrainSubway } from "react-icons/fa6";
+import Eci from "../assets/eci.png"
+import { TbHandFingerLeft } from "react-icons/tb";
 
 const Hero = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -24,7 +26,7 @@ const Hero = () => {
       <div className="mt-1 ">
         <img src={Pic1} alt="" />
       </div>
-      <div className="   bg-gray-200 pl-4.5 rounded-2xl mt-2 mb-2  pt-2 pb-2">
+      <div className="   bg-gray-300 pl-4.5 pr-4.5 rounded-2xl mt-2 mb-2   pt-2 pb-2">
         <div className="flex items-center">
           <h2 className="text-[#430081] font-bold">Lates update</h2>
           <div className="w-10 ">
@@ -35,28 +37,66 @@ const Hero = () => {
             />
           </div>
         </div>
-        <div className="flex items-center gap-2">
-          <div className="w-20">
-            <img src={Ces} alt="" />
+        <div className=" bg-[#F5F5F5] rounded-xl">
+          <div className="flex items-center gap-2 ">
+            <div className="w-20">
+              <img src={Ces} alt="" />
+            </div>
+            <a
+              href="https://se.census.gov.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="text-white w-35 bg-blue-700 p-2 rounded-xl shadow">
+                <h1>Self-Enumeration</h1>
+                <h1>स्व-गणना</h1>
+              </button>
+            </a>
+            <Link to="/SelfEnumeration">
+              <button className="text-white h-16 border-2 border-blue-700 p-2 rounded-xl shadow">
+                <h1 className="text-blue-700 font-bold">स्व-गणना प्रक्रिया</h1>
+              </button>
+            </Link>
           </div>
-          <a
-            href="https://se.census.gov.in/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="text-white w-35 bg-blue-700 p-2 rounded-xl shadow">
-              <h1>Self-Enumeration</h1>
-              <h1>स्व-गणना</h1>
-            </button>
-          </a>
-          <Link to="/SelfEnumeration">
-            <button className="text-white h-16 border-2 border-blue-700 p-2 rounded-xl shadow">
-              <h1 className="text-blue-700 font-bold">स्व-गणना प्रक्रिया</h1>
-            </button>
-          </Link>
+          <p className="text-red-700 font-bold text-center p-2 text-[13px]">
+            स्व-गणना (Self Enumeration) की अवधि : 16 से 30 नवंबर 2026
+          </p>
         </div>
-        <p className="text-red-700 font-bold text-center p-2 text-[13px]">सभी ग्रामवासियों को सूचित किया जाता है कि जनगणना 2027 के अंतर्गत स्व-गणना (Self Enumeration) की प्रक्रिया 16 नवंबर 2026 से शुरू हो रही है।</p>
+
+
+
+        <div className=" bg-[#F5F5F5] rounded-xl mt-5">
+          <div className="flex items-center gap-2 ">
+            <div className="w-20">
+              <img src={Eci} alt="" />
+            </div>
+            <a
+              href="https://se.census.gov.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Link to="/download2">
+               <button className="text-white w-35 bg-blue-700 p-2 rounded-xl shadow">
+                <h1>DraftRoll-2027</h1>
+                <h1>SSR- देखें </h1>
+              </button>
+              </Link>
+            </a>
+            <Link to="/SelfEnumeration">
+              <button className="text-white h-16 border-2 flex  items-center justify-center border-red-700 w-35 rounded-xl shadow">
+                <div className=" text-[40px]  " ><TbHandFingerLeft className="text-red-700  "/></div>
+                <h1 className="text-red-700  text-[10px] font-bold">ड्राफ्टरोल-2027 में अपना नाम देखने के लिए क्लिक करें  </h1>
+                
+              </button>
+            </Link>
+          </div>
+          <p className="text-red-700 font-bold text-center p-2 text-[13px]">
+            उत्तर प्रदेश की मतदाता सूची का ड्राफ्ट-रोल  17 नवंबर, 2026 को  प्रकाशित किया गया है 
+          </p>
+        </div>
+
       </div>
+
       <div className="  grid grid-cols-3 gap-2 bg-gray-200 pl-4.5 rounded-2xl mt-2 mb-2  pt-2 pb-2">
         <button className="bg-[linear-gradient(90deg,hsla(132,79%,68%,1)_0%,hsla(101,62%,48%,1)_100%)] shadow-2xl  h-11 flex leading-3.5  rounded-xl w-28 text-white items-center p-1">
           <div>

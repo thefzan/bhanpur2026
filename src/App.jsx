@@ -7,6 +7,7 @@ import AboutMe from "./components/About.jsx";
 import Services from "./components/Services.jsx";
 import ContactUs from "./components/Contact.jsx";
 import SelfEnumeration from "./components/SelfEnumeration.jsx";
+import DownloadCards2 from "./components/Download2.jsx";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Hero/>}/>
       <Route path="/download" element={<Download/>}/>
+      <Route path="/download2" element={<DownloadCards2/>}/>
       <Route path="/about" element={<AboutMe/>}/>
       <Route path="/services" element={<Services/>}/>
       <Route path="/contact" element={<ContactUs/>}/>
