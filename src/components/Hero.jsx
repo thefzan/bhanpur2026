@@ -82,7 +82,7 @@ const Hero = () => {
               </button>
               </Link>
             </a>
-            <Link to="/SelfEnumeration">
+            <Link to="/download2">
               <button className="text-white h-16 border-2 flex  items-center justify-center border-red-700 w-35 rounded-xl shadow">
                 <div className=" text-[40px]  " ><TbHandFingerLeft className="text-red-700  "/></div>
                 <h1 className="text-red-700  text-[10px] font-bold">ड्राफ्टरोल-2027 में अपना नाम देखने के लिए क्लिक करें  </h1>
