@@ -67,7 +67,7 @@ const Hero = () => {
 
         <div className=" bg-[#F5F5F5] rounded-xl mt-5">
           <div className="flex items-center gap-2 ">
-            <div className="w-20">
+            <div className="w-20 pt-2 ">
               <img src={Eci} alt="" />
             </div>
             <a
