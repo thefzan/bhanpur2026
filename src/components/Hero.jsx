@@ -26,7 +26,7 @@ const Hero = () => {
       <div className="mt-1 ">
         <img src={Pic1} alt="" />
       </div>
-      <div className="   bg-gray-300 pl-4.5 pr-4.5 rounded-2xl mt-2 mb-2   pt-2 pb-2">
+      <div className="   bg-gray-300 pl-4.5 pr-3 rounded-2xl mt-2 mb-2   pt-2 pb-2">
         <div className="flex items-center">
           <h2 className="text-[#430081] font-bold">Lates update</h2>
           <div className="w-10 ">
@@ -58,9 +58,11 @@ const Hero = () => {
               </button>
             </Link>
           </div>
-          <p className="text-red-700 font-bold text-center p-2 text-[13px]">
-            स्व-गणना (Self Enumeration) की अवधि : 16 से 30 नवंबर 2026
-          </p>
+          
+            <p className="text-red-700 font-bold text-center p-2 text-[13px]">
+            <marquee direction="left" behavior="scroll" scrollamount="5" >स्व-गणना (Self Enumeration) की अवधि : 16 से 30 नवंबर 2026
+          </marquee></p>
+          
         </div>
 
 
@@ -91,7 +93,10 @@ const Hero = () => {
             </Link>
           </div>
           <p className="text-red-700 font-bold text-center p-2 text-[13px]">
-            उत्तर प्रदेश की मतदाता सूची का ड्राफ्ट-रोल  17 नवंबर, 2026 को  प्रकाशित किया गया है 
+           <marquee direction="left" behavior="scroll" scrollamount="5">
+             उत्तर प्रदेश की मतदाता सूची का ड्राफ्ट-रोल  17 नवंबर, 2026 को  प्रकाशित किया गया है 
+           </marquee>
+           
           </p>
         </div>
 
